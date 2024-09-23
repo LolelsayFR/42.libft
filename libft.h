@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:33:12 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 13:48:02 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/23 15:41:25 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <unistd.h>
 
-int	ft_strlen(char *str)
+typedef struct s_list
 {
-	int	i;
+	void			*content;
+	struct s_list	*next;
+}		t_list;
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
+int	ft_strlen(char *str);
+
+#endif

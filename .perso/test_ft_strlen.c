@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:33:12 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 13:48:02 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/23 15:22:13 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/23 15:27:29 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-int	ft_strlen(char *str)
+int	main(int ac, char **av)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+	if (ac != 2)
+		return (0);
+	printf("Length of the string: %d\n", ft_strlen(av[1]));
+	return (0);
 }
