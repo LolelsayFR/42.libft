@@ -1,13 +1,14 @@
-NAME	= libft.a
+NAME	= 	libft.a
 
-SRC		= ft_strlen.c
+SRC		= 	ft_strlen.c\
+			ft_atoi.c
 
-CC		= gcc
-CFLAGS	= -Wall -Werror -Wextra
+CC		= 	gcc
+CFLAGS	= 	-Wall -Werror -Wextra
 
-OBJ		= ${SRC:.c=.o}
+OBJ		= 	${SRC:.c=.o}
 
-RM		= rm -f
+RM		= 	rm -f
 
 .c.o:
 	${CC} ${CFLAGS} -c $< -o $@

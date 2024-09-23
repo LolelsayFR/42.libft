@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 17:07:13 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/23 15:22:13 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/23 15:27:29 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
+#include <stdio.h>
+#include "libft.h"
 
-typedef struct s_list
+int	main(int ac, char **av)
 {
-	void			*content;
-	struct s_list	*next;
-}		t_list;
+	if (ac != 2)
+		return (0);
+	printf("Length of the string: %d\n", ft_strlen(av[1]));
+	return (0);
+}
 
-int	ft_strlen(char *str);
-int	ft_atoi(char *str);
-#endif
+
+
+

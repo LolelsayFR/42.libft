@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   test_ft_atoi.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 17:07:13 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/23 15:22:13 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/23 17:07:44 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "libft.h"
 
-typedef struct s_list
+int	main(int ac, char **av)
 {
-	void			*content;
-	struct s_list	*next;
-}		t_list;
-
-int	ft_strlen(char *str);
-int	ft_atoi(char *str);
-#endif
+	if (ac != 2)
+		return (0);
+	printf("Result of Atoi: %d\n", atoi(av[1]));
+	printf("Result of FT_Atoi: %d\n", ft_atoi(av[1]));
+	return (0);
+}

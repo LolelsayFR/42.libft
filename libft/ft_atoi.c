@@ -1,25 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 17:07:13 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/23 16:28:31 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/23 17:38:39 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
-
-typedef struct s_list
+int	ft_atoi(char *str)
 {
-	void			*content;
-	struct s_list	*next;
-}		t_list;
+	int	val;
+	int	sign;
+	int	i;
 
-int	ft_strlen(char *str);
-int	ft_atoi(char *str);
-#endif
+	val = 0;
+	sign = 1;
+	i = 0;
+	while (str[i] == 32 || (str[i] > 8 && str[i] < 14))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			sign = -sign;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		val = val * 10 + (str[i] - '0');
+		i++;
+	}
+	return (val * sign);
+}
