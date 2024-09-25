@@ -6,13 +6,13 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 05:40:26 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/25 05:51:08 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/09/25 06:32:11 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

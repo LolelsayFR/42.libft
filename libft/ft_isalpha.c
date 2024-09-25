@@ -6,12 +6,12 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 05:34:41 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/25 05:57:23 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/09/25 06:31:48 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);

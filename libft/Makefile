@@ -4,8 +4,8 @@ SRC		= 	ft_strlen.c\
 			ft_atoi.c\
 			ft_isalpha.c\
 			ft_isdigit.c\
-			ft_isalnum\
-			ft_isascii
+			ft_isalnum.c\
+			ft_isascii.c
 
 CC		= 	gcc
 CFLAGS	= 	-Wall -Werror -Wextra

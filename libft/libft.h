@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/25 06:01:07 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/09/25 06:31:28 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ typedef struct s_list
 
 int	ft_strlen(char *str);
 int	ft_atoi(char *str);
-int	ft_isalpha(char c);
-int	ft_isdigit(char c);
-int	ft_isalnum(char c);
-int	ft_isascii(char c);
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
 
 #endif

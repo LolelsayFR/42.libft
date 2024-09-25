@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   test_ft_isalphanumdigitascii.c                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 05:40:26 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/25 06:32:31 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/25 06:16:23 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/25 06:33:54 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
+#include <stdio.h>
 
-int	ft_isascii(int c)
+int	main(int ac, char **av)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
+	if (ac != 2)
+		return (0);
+	printf("Retour de ft_isascii : %d\n", ft_isascii(av[1][0]));
+	printf("Retour de ft_isalnum : %d\n", ft_isalnum(av[1][0]));
+	printf("Retour de ft_isalpha : %d\n", ft_isalpha(av[1][0]));
+	printf("Retour de ft_isdigit : %d\n", ft_isdigit(av[1][0]));
 	return (0);
 }
