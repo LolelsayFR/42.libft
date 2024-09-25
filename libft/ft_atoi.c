@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:28:31 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 17:38:39 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/09/25 05:52:24 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -28,7 +28,7 @@ int	ft_atoi(char *str)
 			sign = -sign;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]))
 	{
 		val = val * 10 + (str[i] - '0');
 		i++;
