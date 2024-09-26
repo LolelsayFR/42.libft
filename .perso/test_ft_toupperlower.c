@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   test_ft_toupperlower.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/26 18:02:38 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/26 18:04:29 by emaillet          #+#    #+#             */
+/*   Updated: 2024/09/26 18:24:38 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
+#include "libft.h"
+#include <unistd.h>
 
-typedef struct s_list
+int	main(int ac, char **av)
 {
-	void			*content;
-	struct s_list	*next;
-}		t_list;
+	int		i;
+	char	tl;
+	char	tu;
 
-int	ft_strlen(char *str);
-int	ft_atoi(char *str);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
-
-#endif
+	i = 0;
+	if (ac != 2)
+		return (0);
+	while (av[1][i])
+	{
+		tl = ft_tolower(av[1][i]);
+		tu = ft_toupper(av[1][i]);
+		write(1, &tl, 1);
+		write(1, " | ", 3);
+		write(1, &tu, 1);
+		write(1, "\n", 1);
+		i++;
+	}
+	return (0);
+}
