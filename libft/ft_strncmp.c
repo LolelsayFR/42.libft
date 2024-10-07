@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/07 10:31:44 by emaillet         ###   ########.fr       */
+/*   Created: 2024/10/07 09:23:53 by emaillet          #+#    #+#             */
+/*   Updated: 2024/10/07 10:31:05 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <unistd.h>
+#include "libft.h"
 
-typedef struct s_list
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	void			*content;
-	struct s_list	*next;
-}		t_list;
+	unsigned int	i;
 
-int	ft_strlen(char *str);
-int	ft_atoi(char *str);
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
-
-#endif
+	i = 0;
+	while ((i < n) && (s1[i] || s2[i]))
+	{
+		if (!(s1[i] == s2[i]))
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (0);
+}
