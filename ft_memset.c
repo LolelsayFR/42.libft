@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 15:22:13 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 15:27:29 by emaillet         ###   ########.fr       */
+/*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
+/*   Updated: 2024/10/15 19:22:35 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-int	main(int ac, char **av)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if (ac != 2)
-		return (0);
-	printf("Length of the string: %d\n", ft_strlen(av[1]));
-	return (0);
+	int				i;
+	unsigned char	*set;
+
+	set = s;
+	i = 0;
+	while (i < n)
+	{
+		set[i] = c;
+		i++;
+	}
+	return (s);
 }
-
-
-
-

@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_isascii.c                                  :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 06:16:23 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/26 17:41:25 by emaillet         ###   ########.fr       */
+/*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
+/*   Updated: 2024/10/15 18:32:29 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-#include <stdio.h>
 
-int	main(int ac, char **av)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (ac != 2)
-		return (0);
-	printf("Retour de ft_isascii : %d\n", ft_isascii(av[1][0]));
-	printf("Retour de ft_isalnum : %d\n", ft_isalnum(av[1][0]));
-	printf("Retour de ft_isalpha : %d\n", ft_isalpha(av[1][0]));
-	printf("Retour de ft_isdigit : %d\n", ft_isdigit(av[1][0]));
-	printf("Retour de ft_isprint : %d\n", ft_isprint(av[1][0]));
+	unsigned int		i;
+	const unsigned char	*local_s1;
+	const unsigned char	*local_s2;
+
+	local_s1 = s1;
+	local_s2 = s2;
+	i = 0;
+	while ((i < n) && (local_s1[i] || local_s2[i]))
+	{
+		if (!(local_s1[i] == local_s2[i]))
+			return (local_s1[i] - local_s2[i]);
+		i++;
+	}
 	return (0);
 }

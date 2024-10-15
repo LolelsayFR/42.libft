@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_atoi.c                                     :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 15:22:13 by emaillet          #+#    #+#             */
-/*   Updated: 2024/09/23 17:07:44 by emaillet         ###   ########.fr       */
+/*   Created: 2024/09/26 17:26:36 by emaillet          #+#    #+#             */
+/*   Updated: 2024/10/15 13:34:16 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
-int	main(int ac, char **av)
+int	ft_isprint(int c)
 {
-	if (ac != 2)
-		return (0);
-	printf("Result of Atoi: %d\n", atoi(av[1]));
-	printf("Result of FT_Atoi: %d\n", ft_atoi(av[1]));
+	if (c >= 32 && c <= 126)
+		return (1);
 	return (0);
 }
