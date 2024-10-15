@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/15 15:36:17 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/15 20:21:12 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *s, size_t n)
 
 	set = s;
 	i = 0;
-	while (i != n)
+	while (i < n)
 	{
 		set[i] = '\0';
 		i++;

@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/15 18:05:41 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:51:49 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			i--;
 		}
 	}
-	return (0);
+	return (dest);
 }
