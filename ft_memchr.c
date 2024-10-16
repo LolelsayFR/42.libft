@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/17 01:37:44 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/17 01:45:18 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
-	const char	*local_temp;
+	size_t				i;
+	const unsigned char	*local_temp;
 
-	local_temp = (const char *)s;
+	local_temp = s;
 	i = 0;
-	while (i < n || local_temp)
+	while (i < n)
 	{
-		if (local_temp[i] == c)
+		if (local_temp[i] == (unsigned char)c)
 			return ((void *)(local_temp + i));
-		local_temp++;
 		i++;
 	}
 	return (NULL);
