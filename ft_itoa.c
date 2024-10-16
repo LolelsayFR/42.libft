@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/17 00:50:34 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/17 00:55:38 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char	*ft_itoa(int n)
 	str[count] = '\0';
 	while (count > sign)
 	{
-		str[count--] = long_n % 10 + '0';
+		str[--count] = long_n % 10 + '0';
 		long_n /= 10;
 	}
 	return (str);
