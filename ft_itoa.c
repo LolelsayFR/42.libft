@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 18:05:27 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:11:01 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 	i = 0;
 	if (n < 0)
 		sign = 1;
-	str = malloc((ft_intlen(n) + sign) * sizeof(char));
+	str = malloc((ft_intlen(n) + sign + 1) * sizeof(char));
 	if (sign == 1)
 	{
 		str[0] = '-';
