@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 03:30:24 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:23:35 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	local_dest = dest;
 	local_temp = src;
 	i = 0;
-	if (!dest || !src)
-		return (NULL);
+	if (!src)
+		return (dest);
 	while (i != n)
 	{
 		local_dest[i] = local_temp[i];
