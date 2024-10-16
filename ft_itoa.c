@@ -6,66 +6,60 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 20:57:12 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/17 00:50:34 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-static char	*ft_strreverse(char *str)
+static int	ft_intcount(int n)
 {
-	int		i;
-	int		j;
-	char	*dest;
+	int	result;
 
-	i = ft_strlen(str);
-	j = 0;
-	dest = malloc(i * sizeof(char));
-	while (i > 0)
+	result = 0;
+	if (n < 0)
 	{
-		dest[j] = str[i];
-		i--;
-		j++;
+		n = -n;
+		result = 1;
 	}
-	return (dest);
-}
-
-static int	ft_intlen(int n)
-{
-	int	count;
-
-	while (n > 9)
+	if (n == 0)
+		result = 1;
+	else
 	{
-		n /= 10;
-		count++;
+		while (n)
+		{
+			n = n / 10;
+			result++;
+		}
 	}
-	return (count);
+	return (result);
 }
 
 char	*ft_itoa(int n)
 {
+	int		count;
+	long	long_n;
 	char	*str;
-	int		i;
 	int		sign;
 
-	if (n <= -2147483648)
-		return (ft_strdup("-2147483648"));
+	long_n = (long) n;
+	count = ft_intcount(long_n);
+	str = malloc((count + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
 	sign = 0;
-	i = 0;
-	if (n < 0)
-		sign = 1;
-	str = malloc((ft_intlen(n) + sign + 1) * sizeof(char));
-	if (sign == 1)
+	if (long_n < 0)
 	{
+		long_n = -long_n;
 		str[0] = '-';
-		n -= -n;
-		i++;
+		sign = 1;
 	}
-	while (n > 9)
+	str[count] = '\0';
+	while (count > sign)
 	{
-		str[i++] = n % 10;
-		n /= 10;
+		str[count--] = long_n % 10 + '0';
+		long_n /= 10;
 	}
-	str[i] = '\0';
-	return (ft_strreverse(str));
+	return (str);
 }
