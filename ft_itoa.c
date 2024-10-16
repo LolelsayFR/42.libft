@@ -6,11 +6,29 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 15:58:58 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:05:27 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	*ft_strreverse(char *str)
+{
+	int		i;
+	int		j;
+	char	*dest;
+
+	i = ft_strlen(str);
+	j = 0;
+	dest = malloc(i * sizeof(char));
+	while (i > 0)
+	{
+		dest[j] = str[i];
+		i--;
+		j++;
+	}
+	return (dest);
+}
 
 static int	ft_intlen(int n)
 {
@@ -23,6 +41,7 @@ static int	ft_intlen(int n)
 	}
 	return (count);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -39,13 +58,14 @@ char	*ft_itoa(int n)
 	if (sign == 1)
 	{
 		str[0] = '-';
+		n -= -n;
 		i++;
 	}
 	while (n > 9)
 	{
-		str[i] = n % 10;
+		str[i++] = n % 10;
 		n /= 10;
-		i++;
 	}
-	return (str);
+	str[i] = '\0';
+	return (ft_strreverse(str));
 }
