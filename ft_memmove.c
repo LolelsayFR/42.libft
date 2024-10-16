@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 03:23:19 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:15:21 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	local_dest = dest;
 	local_temp = src;
-	if (!dest || !src)
+	if (!dest || !src || !n)
 		return (NULL);
 	if (!(dest > src && dest < (src + n)))
 	{
