@@ -6,8 +6,10 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/15 14:09:00 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/18 00:58:51 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//char	*ft_strtrim(char const *s1, char const *set)

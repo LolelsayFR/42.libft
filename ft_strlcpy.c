@@ -6,8 +6,10 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/15 14:06:04 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/18 00:59:06 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//size_t	ft_strlcpy(char *dst, const char *src, size_t size)

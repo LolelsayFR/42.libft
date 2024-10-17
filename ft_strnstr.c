@@ -6,8 +6,10 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/15 14:08:55 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/18 00:58:42 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//char	*ft_strnstr(const char *big, const char *little, size_t len)
