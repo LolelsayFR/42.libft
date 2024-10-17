@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:50:52 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/18 01:10:05 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/18 01:15:14 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
 
-	if (c == '\0')
-		return (NULL);
 	i = ft_strlen(s);
 	while (s[i])
 	{
@@ -25,5 +23,5 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)(s + i));
 		i--;
 	}
-	return (NULL);
+	return ((char *)(s + i + 1));
 }
