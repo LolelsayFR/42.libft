@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/17 18:00:43 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/18 03:28:55 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == (unsigned char)c)
-			return ((char *)(s + i));
+		if (s[i] == (char) c)
+			break ;
 		i++;
 	}
+	if (s[i] == (char) c)
+		return ((char *) s + i);
 	return (NULL);
 }
