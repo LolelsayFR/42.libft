@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/20 21:47:47 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/21 00:24:39 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,44 +14,33 @@
 
 static size_t	ft_trimcount(char const *s1, char const *set)
 {
-	size_t	i;
-	size_t	size;
+	size_t	start;
+	size_t	end;
 
-	size = ft_strlen(s1);
-	i = size;
-	while (ft_strchr(set, s1[i]))
-	{
-		i--;
-		size--;
-	}
-	i = 0;
-	while (ft_strchr(set, s1[i]))
-	{
-		i++;
-		size--;
-	}
-	return (size);
+	start = 0;
+	end = ft_strlen(s1);
+	while (s1[start] && ft_strchr(set, s1[start]))
+		start++;
+	while (end > start && ft_strchr(set, s1[end - 1]))
+		end--;
+	return (end - start);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
-	size_t	j;
-	char	*dest;
+	size_t	trim_count;
+	char	*result;
 
-	dest = malloc((ft_trimcount(s1, set) + 1) * sizeof(char));
-	if (!dest)
+	if (!s1 || !set)
 		return (NULL);
 	i = 0;
-	j = 0;
-	while (i < ft_trimcount(s1, set) - 1)
-	{
-		while (ft_strchr(set, s1[j]))
-			j++;
-		dest[i] = s1[j];
+	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
-		j++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	trim_count = ft_trimcount(s1, set);
+	result = malloc((trim_count + 1) * sizeof(char));
+	if (!result)
+		return (NULL);
+	ft_strlcpy(result, &s1[i], trim_count + 1);
+	return (result);
 }
