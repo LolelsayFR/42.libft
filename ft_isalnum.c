@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 05:30:57 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/15 13:33:55 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/21 03:09:48 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-		return (1);
+		return (8);
 	return (0);
 }
