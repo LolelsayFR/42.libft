@@ -36,10 +36,22 @@ SRC		=	ft_atoi.c\
 			ft_tolower.c\
 			ft_toupper.c
 
+B_SRC	=	ft_lstadd_back.c\
+			ft_lstadd_front.c\
+			ft_lstclear.c\
+			ft_lstdelone.c\
+			ft_lstiter.c\
+			ft_lstlast.c\
+			ft_lstmap.c\
+			ft_lstnew.c\
+			ft_lstsize.c
+
 CC		= 	gcc
 CFLAGS	= 	-Wall -Werror -Wextra
 
 OBJ		= 	${SRC:.c=.o}
+
+B_OBJ	= 	${B_SRC:.c=.o}
 
 RM		= 	rm -f
 
@@ -49,10 +61,14 @@ RM		= 	rm -f
 $(NAME): ${OBJ}
 	ar crs $(NAME) ${OBJ}
 
+bonus: re ${B_OBJ}
+	ar crs $(NAME) ${B_OBJ}
+
 all:	$(NAME)
 
 clean:
 	$(RM) ${OBJ}
+	$(RM) ${B_OBJ}
 
 fclean:	clean
 	$(RM) $(NAME)
