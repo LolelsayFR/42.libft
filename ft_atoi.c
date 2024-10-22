@@ -6,13 +6,13 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:28:31 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 01:13:21 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/22 00:47:25 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	val;
 	int	sign;
