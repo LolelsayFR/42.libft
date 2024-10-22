@@ -6,12 +6,11 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 21:58:17 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/22 00:51:46 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:07:15 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
