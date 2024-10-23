@@ -6,8 +6,10 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:29:07 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/22 23:29:08 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:33:10 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+int	ft_lstsize(t_list *lst);
