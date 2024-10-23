@@ -61,9 +61,6 @@ RM		= 	rm -f
 $(NAME): ${OBJ}
 	ar crs $(NAME) ${OBJ}
 
-bonus: re ${B_OBJ}
-	ar crs $(NAME) ${B_OBJ}
-
 all:	$(NAME)
 
 clean:
@@ -75,3 +72,5 @@ fclean:	clean
 
 re:	fclean all
 
+bonus:	$(OBJ) $(B_OBJ)
+	ar rcs $(NAME) $(OBJ) $(B_OBJ)
