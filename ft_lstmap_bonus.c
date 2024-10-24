@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:29:00 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/24 14:15:47 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:03:58 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	newfirst = NULL;
 	while (lst)
 	{
-		new = ft_lstnew((*f)(lst->content));
+		new = ft_lstnew(NULL);
 		if (!new)
 		{
 			ft_lstclear(&new, del);
-			return (NULL);
+			break ;
 		}
+		new->content = f(lst->content);
 		ft_lstadd_back(&newfirst, new);
 		lst = lst->next;
 	}
