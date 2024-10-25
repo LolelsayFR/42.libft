@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/17 01:49:25 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/25 23:16:01 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,20 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	result;
+	long	n_long;
 
-	if (n == -2147483648)
-	{
-		write(fd, "-2147483648", 11);
-		return ;
-	}
-	if (n < 0)
+	n_long = (long)n;
+	if (n_long < 0)
 	{
 		write(fd, "-", 1);
-		n = -n;
+		n_long = -n_long;
 	}
-	if (n > 9)
+	if (n_long > 9)
 	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10, fd);
+		ft_putnbr_fd(n_long / 10, fd);
+		ft_putnbr_fd(n_long % 10, fd);
 		return ;
 	}
-	result = n + '0';
+	result = n_long + '0';
 	write(fd, &result, 1);
 }

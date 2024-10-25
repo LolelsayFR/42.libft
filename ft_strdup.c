@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 18:03:49 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/25 21:10:17 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,9 @@
 char	*ft_strdup(const char *s)
 {
 	int		i;
-	int		j;
 	char	*dest;
 
-	j = 0;
-	while (s[j])
-		j++;
-	dest = malloc((j + 1) * sizeof(char));
+	dest = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (dest == NULL)
 		return (NULL);
 	dest[0] = '\0';

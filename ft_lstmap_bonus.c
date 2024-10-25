@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:29:00 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/24 18:03:58 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/25 22:54:49 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	t_list	*newfirst;
 
-	if (!lst || !f || !del)
-		return (NULL);
 	newfirst = NULL;
 	while (lst)
 	{

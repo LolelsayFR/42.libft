@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/19 16:19:44 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/25 20:47:49 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned int	s;
-	char			*ptr;
+	char	*ptr;
 
-	s = nmemb * size;
-	ptr = malloc(s);
+	if (size && nmemb > INT_MAX / size)
+		return (NULL);
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
-	ft_memset(ptr, 0, s);
+	ft_memset(ptr, 0, (nmemb * size));
 	return (ptr);
 }
