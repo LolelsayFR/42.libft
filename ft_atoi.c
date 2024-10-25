@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:28:31 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/25 20:26:15 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 00:42:42 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,19 @@ int	ft_atoi(const char *str)
 	}
 	return (val * sign);
 }
+
+//#include <stdlib.h>
+//#include <stdio.h>
+//
+//int	main(int ac, char **av)
+//{
+//	if (ac != 2)
+//		return (0);
+//	if (atoi(av[1]) == ft_atoi(av[1]))
+//		printf("\033[32m[ok]"
+//	else
+//		printf("\033[32m[ko]"
+//	printf("Result of Atoi: %d\n", atoi(av[1]));
+//	printf("Result of FT_Atoi: %d\n", ft_atoi(av[1]));
+//	return (0);
+//}
