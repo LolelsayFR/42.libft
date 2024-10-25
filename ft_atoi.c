@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:28:31 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/22 00:47:25 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/25 20:26:15 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(const char *str)
 	val = 0;
 	sign = 1;
 	i = 0;
-	while (str[i] == 32 || (str[i] > 8 && str[i] < 14))
+	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
