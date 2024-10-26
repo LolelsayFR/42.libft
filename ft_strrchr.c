@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:50:52 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/18 03:50:54 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:18:06 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,22 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//int	main(void)
+//{
+//	const char	*str = "Hello, World!";
+//	const int	c = 'o';
+//	void		*result;
+//
+//	result = ft_strrchr(str, c);
+//	if (result)
+//		printf("ft_strrchr: '%c' in \"%s\": %s\n",
+//			c, str, (char *)result);
+//	else
+//		printf("ft_strrchr: '%c' not found \"%s\"\n",
+//			c, str);
+//	return (0);
+//}

@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/21 00:24:39 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:18:20 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(result, &s1[i], trim_count + 1);
 	return (result);
 }
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//int	main(void)
+//{
+//	char	*result;
+//
+//	result = ft_strtrim("Ft42 Test de fou lalalalala FFFtFFt44442222", "Ft42");
+//	if (result)
+//		printf("ft_strtrim: %s\n", result);
+//	return (0);
+//}

@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/19 16:07:41 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:17:54 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,18 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//int	main(void)
+//{
+//	char	*result;
+//
+//	result = ft_strnstr("Ft42 Test de fou lalalala FFFtFFt44442222", "fou", 7);
+//	if (result)
+//		printf("ft_strnstr: %s\n", result);
+//	else
+//		printf("Not found");
+//	return (0);
+//}

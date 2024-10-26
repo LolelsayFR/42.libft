@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/17 19:45:46 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:14:25 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,22 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//int	main(void)
+//{
+//	const char	*str = "Hello, World!";
+//	const int	c = 'o';
+//	void		*result;
+//
+//	result = ft_memchr(str, c, 13);
+//	if (result)
+//		printf("ft_memchr: '%c' in \"%s\": %s\n",
+//			c, str, (char *)result);
+//	else
+//		printf("ft_memchr: '%c' not found \"%s\"\n",
+//			c, str);
+//	return (0);
+//}

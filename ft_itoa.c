@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/20 16:20:35 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:31:29 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,3 +62,30 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//char	*ft_itoa(int n); // Assurez-vous d'avoir votre implémentation ici
+//
+//int	main(void)
+//{
+//	const int	n[] = {0, 42, -42, 2147483647, -2147483648};
+//	size_t		count;
+//	size_t		i;
+//	char		*result;
+//
+//	count = 5;
+//	i = 0;
+//	while (i < count)
+//	{
+//		result = ft_itoa(n[i]);
+//		if (result)
+//		{
+//			printf("\033[32m[ok]\033[0m t_itoa(%d) = '%s'\n", n[i], result);
+//			free(result);
+//		}
+//		i++;
+//	}
+//	return (0);
+//}
