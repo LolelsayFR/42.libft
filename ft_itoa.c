@@ -66,8 +66,6 @@ char	*ft_itoa(int n)
 //#include <stdio.h>
 //#include <stdlib.h>
 //
-//char	*ft_itoa(int n); // Assurez-vous d'avoir votre implémentation ici
-//
 //int	main(void)
 //{
 //	const int	n[] = {0, 42, -42, 2147483647, -2147483648};
