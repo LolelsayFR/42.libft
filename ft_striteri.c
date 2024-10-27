@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 21:58:17 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/25 21:11:19 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 00:30:00 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+//#include "stdio.h"
+//
+//void	ft_repbyx(unsigned int c, char *s)
+//{
+//	s[c] = 'x';
+//}
+//
+//int	main(void)
+//{
+//	static char	src[7] = "Bernard";
+//
+//	ft_striteri(src, ft_repbyx);
+//	printf("%s", src);
+//	return (0);
+//}

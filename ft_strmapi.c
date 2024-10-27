@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/22 00:44:02 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 23:21:19 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,20 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	dst[i] = '\0';
 	return (dst);
 }
+
+//#include "stdio.h"
+//
+//char	ft_repbyx(unsigned int c, char s)
+//{
+//	(void)c;
+//	s = 'x';
+//	return (s);
+//}
+//
+//int	main(void)
+//{
+//	static char	src[7] = "Bernard";
+//
+//	printf("%s", ft_strmapi(src, ft_repbyx));
+//	return (0);
+//}

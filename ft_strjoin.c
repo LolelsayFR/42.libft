@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/21 17:02:31 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 00:20:12 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dest[i] = '\0';
 	return (dest);
 }
+
+//#include "stdio.h"
+//
+//int	main(void)
+//{
+//	printf("%s", ft_strjoin("Hello ", "World"));
+//	return (0);
+//}

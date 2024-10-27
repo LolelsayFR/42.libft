@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/17 01:02:10 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 00:30:43 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+//#include <stdlib.h>
+//#include <stdio.h>
+//
+//int	main(int argc, char *argv[])
+//{
+//	if (argc == 4)
+//		printf("Diff = %i \n", ft_memcmp(argv[1], argv[2], atoi(argv[3])));
+//	return (0);
+//}

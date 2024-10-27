@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/25 23:16:01 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 21:06:55 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,12 @@ void	ft_putnbr_fd(int n, int fd)
 	result = n_long + '0';
 	write(fd, &result, 1);
 }
+
+//#include <stdlib.h>
+//
+//int	main(int argc, char *av[])
+//{
+//	if (argc == 2)
+//		ft_putnbr_fd(atoi(av[1]), 1);
+//	return (0);
+//}

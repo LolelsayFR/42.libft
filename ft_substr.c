@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/18 03:46:20 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 00:10:51 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest[i] = '\0';
 	return (dest);
 }
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//int	main(void)
+//{
+//	char	*result;
+//
+//	result = ft_substr("Ft42 Test de fou lalalala FFFtFFt44442222", 5, 11);
+//	if (result)
+//		printf("ft_substr: %s\n", result);
+//	return (0);
+//}

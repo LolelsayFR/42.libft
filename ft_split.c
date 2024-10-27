@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/22 16:54:18 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 22:25:40 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,3 +80,22 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_splitinject(s, c, result));
 }
+
+//int	main(int argc, char *argv[])
+//{
+//	char	**splited;
+//
+//	splited = NULL;
+//	if (argc == 2)
+//	{
+//		splited = ft_split(argv[1], ' ');
+//		while (*splited != NULL)
+//		{
+//			ft_putendl_fd(*splited, 1);
+//			free(*splited);
+//			splited++;
+//		}
+//		free(splited);
+//	}
+//	return (1);
+//}

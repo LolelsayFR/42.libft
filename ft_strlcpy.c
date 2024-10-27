@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/19 14:07:03 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 00:28:55 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (srclen);
 }
+
+//#include "stdio.h"
+//
+//int	main(void)
+//{
+//	static char	src[7] = "Bernard";
+//
+//	printf("Size : %zu -> %s \n", ft_strlcpy(src, "Ronald", 7), src);
+//	return (0);
+//}

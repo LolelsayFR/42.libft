@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/16 18:29:09 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/26 22:44:06 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+//#include "stdio.h"
+//
+//int	main(void)
+//{
+//	static char	src[7] = "Bernard";
+//	static char	*dest;
+//
+//	dest = src + 3;
+//	ft_memmove(dest, src, 7);
+//	printf("%s", dest);
+//	return (0);
+//}

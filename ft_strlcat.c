@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/19 15:07:59 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 00:28:39 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dstlen + i] = '\0';
 	return (dstlen + srclen);
 }
+
+//#include "stdio.h"
+//
+//int	main(void)
+//{
+//	static char	src[7] = "Bernard";
+//
+//	printf("Size : %zu -> %s \n", ft_strlcat(src, "Ronald", 14), src);
+//	return (0);
+//}
