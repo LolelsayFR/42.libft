@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:28:48 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/27 03:03:40 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 04:33:36 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,13 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 //void	ft_lstprint(t_list *liste)
 //{
 //	t_list	*tmp;
+//	char	*s;
 //
 //	tmp = liste;
 //	while (tmp != NULL)
 //	{
-//		printf("%s -> ", (char *)tmp->content);
+//		s = tmp->content;
+//		printf("%s -> ", s);
 //		tmp = tmp->next;
 //	}
 //	printf("NULL\n");
@@ -40,24 +42,18 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 //
 //int	main(int argc, char *argv[])
 //{
-//	t_list	*tete;
-//	t_list	*second;
+//	t_list	*test;
+//	t_list	*temp;
 //
 //	if (argc == 3)
 //	{
-//		tete = malloc(sizeof(t_list));
-//		tete->content = malloc(ft_strlen(argv[1]) + 1);
-//		ft_strlcpy(tete->content, argv[1], ft_strlen(argv[1]));
-//		tete->next = second;
-//		second = malloc(sizeof(t_list));
-//		second->content = malloc(ft_strlen(argv[2]) + 1);
-//		ft_strlcpy
-//		ft_lstprint(tete);
-//		ft_lstclear(&tete, free);
-//		if (tete)
-//			ft_lstprint(tete);
-//		else
-//			printf("GOOD ;P");
+//		test = ft_lstnew(ft_strdup(argv[1]));
+//		ft_lstadd_back(&test, ft_lstnew(ft_strdup(argv[2])));
+//		ft_lstprint(test);
+//		temp = test->next;
+//		ft_lstdelone(test, free);
+//		test = temp;
+//		ft_lstprint(test);
 //	}
 //	return (0);
 //}

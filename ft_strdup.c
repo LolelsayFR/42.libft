@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 22:46:00 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 03:35:43 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,12 @@ char	*ft_strdup(const char *s)
 
 //#include "stdio.h"
 //
-//int	main(void)
+//int	main(int ac, char **av)
 //{
 //	static char	src[7] = "Bernard";
 //
-//	printf("%s", ft_strdup(src));
+//	if (ac != 2)
+//		return (0);
+//	printf("%s, av = %s", ft_strdup(src), ft_strdup(av[1]));
 //	return (0);
 //}

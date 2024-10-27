@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:28:20 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/27 02:35:20 by emaillet         ###   ########.fr       */
+/*   Updated: 2024/10/27 04:06:45 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ void	ft_lstadd_back(t_list **lst, t_list *lnew)
 //
 //	if (argc == 3)
 //	{
-//		test = ft_lstnew(argv[1]);
-//		ft_lstadd_back(&test, ft_lstnew(argv[2]));
+//		test = ft_lstnew(ft_strdup(argv[1]));
+//		ft_lstadd_back(&test, ft_lstnew(ft_strdup(argv[2])));
 //		ft_lstprint(test);
 //	}
 //	return (0);
