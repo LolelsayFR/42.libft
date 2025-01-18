@@ -6,11 +6,13 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 21:06:41 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/18 13:15:30 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
 		return ;
