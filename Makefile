@@ -1,23 +1,23 @@
 NAME	=	libft.a
 
-SRC		=	ft_atoi.c\
+SRC		=	conversion/ft_atoi.c\
 			ft_bzero.c\
 			ft_calloc.c\
-			ft_isalnum.c\
-			ft_isalpha.c\
-			ft_isascii.c\
-			ft_isdigit.c\
-			ft_isprint.c\
-			ft_itoa.c\
+			conditional/ft_isalnum.c\
+			conditional/ft_isalpha.c\
+			conditional/ft_isascii.c\
+			conditional/ft_isdigit.c\
+			conditional/ft_isprint.c\
+			conversion/ft_itoa.c\
 			ft_memchr.c\
 			ft_memcmp.c\
 			ft_memcpy.c\
 			ft_memmove.c\
 			ft_memset.c\
-			ft_putchar_fd.c\
-			ft_putendl_fd.c\
-			ft_putnbr_fd.c\
-			ft_putstr_fd.c\
+			print/ft_putchar_fd.c\
+			print/ft_putendl_fd.c\
+			print/ft_putnbr_fd.c\
+			print/ft_putstr_fd.c\
 			ft_split.c\
 			ft_strchr.c\
 			ft_strdup.c\
@@ -36,15 +36,15 @@ SRC		=	ft_atoi.c\
 			ft_tolower.c\
 			ft_toupper.c
 
-B_SRC	=	ft_lstadd_back_bonus.c\
-			ft_lstadd_front_bonus.c\
-			ft_lstclear_bonus.c\
-			ft_lstdelone_bonus.c\
-			ft_lstiter_bonus.c\
-			ft_lstlast_bonus.c\
-			ft_lstmap_bonus.c\
-			ft_lstnew_bonus.c\
-			ft_lstsize_bonus.c
+B_SRC	=	t_list/ft_lstadd_back_bonus.c\
+			t_list/ft_lstadd_front_bonus.c\
+			t_list/ft_lstclear_bonus.c\
+			t_list/ft_lstdelone_bonus.c\
+			t_list/ft_lstiter_bonus.c\
+			t_list/ft_lstlast_bonus.c\
+			t_list/ft_lstmap_bonus.c\
+			t_list/ft_lstnew_bonus.c\
+			t_list/ft_lstsize_bonus.c
 
 CC		= 	gcc
 CFLAGS	= 	-Wall -Werror -Wextra
