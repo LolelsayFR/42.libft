@@ -6,14 +6,16 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:28:26 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/27 04:07:51 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 02:35:57 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *lnew)
 {
+	if (!lst || !lnew)
+		return ;
 	lnew -> next = *lst;
 	*lst = lnew;
 }

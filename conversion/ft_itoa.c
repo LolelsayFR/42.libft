@@ -6,11 +6,11 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 16:31:29 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 03:07:31 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static int	ft_intcount(int n)
 {
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 
 	long_n = (long) n;
 	count = ft_intcount(long_n);
-	str = malloc((count + 1) * sizeof(char));
+	str = ft_calloc((count + 1), sizeof(char));
 	if (!str)
 		return (NULL);
 	sign = 0;

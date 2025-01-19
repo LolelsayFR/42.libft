@@ -1,0 +1,6 @@
+[submodule "modules/ft_printf"]
+	path = modules/ft_printf
+	url = git@github.com:LolelsayFR/42.ft_printf.git
+[submodule "modules/get_next_line"]
+	path = modules/get_next_line
+	url = git@github.com:LolelsayFR/42.get_next_line.git

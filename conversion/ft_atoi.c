@@ -6,11 +6,11 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:28:31 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 00:42:42 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 02:50:32 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -18,6 +18,8 @@ int	ft_atoi(const char *str)
 	int	sign;
 	int	i;
 
+	if (!str)
+		return (0);
 	val = 0;
 	sign = 1;
 	i = 0;

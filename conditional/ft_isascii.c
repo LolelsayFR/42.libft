@@ -6,14 +6,16 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 05:40:26 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 19:10:39 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 02:56:39 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isascii(int c)
 {
+	if (c < 0)
+		return (0);
 	if (c >= '\0' && c <= ('~' + 1))
 		return (1);
 	return (0);

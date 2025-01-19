@@ -6,14 +6,16 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 17:26:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 19:14:21 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 02:54:36 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isprint(int c)
 {
+	if (!c)
+		return (0);
 	if (c >= ' ' && c <= '~')
 		return (1);
 	return (0);

@@ -6,14 +6,16 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 05:30:57 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/27 00:33:58 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 02:55:15 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isalnum(int c)
 {
+	if (!c)
+		return (0);
 	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	return (0);
