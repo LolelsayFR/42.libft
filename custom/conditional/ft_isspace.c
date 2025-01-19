@@ -6,11 +6,9 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 04:03:58 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 04:04:50 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 06:00:03 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../libftplus.h"
 
 int	ft_isspace(int i)
 {

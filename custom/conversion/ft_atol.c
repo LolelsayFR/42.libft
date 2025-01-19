@@ -6,11 +6,11 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 04:07:02 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 04:15:14 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 06:00:13 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libftplus.h"
+#include "../../libft.h"
 
 long	ft_atol(const char *str)
 {

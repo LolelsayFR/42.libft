@@ -6,11 +6,9 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 04:05:42 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 04:05:54 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 05:59:59 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../libftplus.h"
 
 int	ft_isupper(int c)
 {

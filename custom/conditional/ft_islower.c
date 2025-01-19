@@ -6,11 +6,9 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 04:05:13 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 04:05:27 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 05:59:52 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../libftplus.h"
 
 int	ft_islower(int c)
 {

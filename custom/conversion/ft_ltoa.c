@@ -6,11 +6,11 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 04:36:58 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 06:00:25 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libftplus.h"
+#include "../../libft.h"
 
 static int	ft_intcount(long n)
 {

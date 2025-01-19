@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2024/10/26 16:18:41 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/19 05:59:19 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H     
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <limits.h>
+# include "custom/libftplus_macro.h"
 
 typedef struct s_list
 {
@@ -66,5 +67,15 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+long	ft_atol(const char *str);
+size_t	ft_printf(const char *s, ...);
+size_t	ft_printfd(int fd, const char *s, ...);
+char	*get_next_line(int fd);
+char	*ft_ltoa(long n);
+int		ft_free_tab(void **tab);
+int		ft_isspace(int c);
+int		ft_islower(int c);
+int		ft_isupper(int c);
 
 #endif
