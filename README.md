@@ -45,6 +45,6 @@ Make sure to initialize and update the submodules as mentioned in the usage inst
 
 ## Project Context
 
-Libft is a project from the 42 school curriculum. The 42 school is a private, nonprofit and tuition-free computer programming school created and funded by French billionaire Xavier Niel. The school aims to provide a high-quality education in software engineering and computer programming.
+Libft is a project from the 42 school. The 42 school is a private, nonprofit and tuition-free computer programming school created and funded by French billionaire Xavier Niel. The school aims to provide a high-quality education in software engineering and computer programming.
 
-The Libft project is an essential part of the 42 curriculum, as it helps students understand the inner workings of standard library functions and develop their own implementations. The project is also evolutive, meaning that students can continue to expand and improve their library as they progress through their studies.
+The Libft project is an essential part of the 42 cursus, as it helps students understand the inner workings of standard library functions and develop their own implementations. The project is also evolutive, meaning that students can continue to expand and improve their library as they progress through their studies.
