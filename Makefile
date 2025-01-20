@@ -51,13 +51,25 @@ C_SRC	=	custom/conditional/ft_islower.c\
 			custom/conditional/ft_isspace.c\
 			custom/conversion/ft_ltoa.c\
 			custom/conversion/ft_atol.c\
-			custom/mem/ft_free_tab.c\
+			custom/mem/ft_free_strtab.c\
 			custom/ft_printfd/ft_printfd.c\
 			custom/ft_printfd/ft_putchar_re_fd.c\
 			custom/ft_printfd/ft_puthexa_fd.c\
 			custom/ft_printfd/ft_putmem_fd.c\
 			custom/ft_printfd/ft_putnbr_re_fd.c\
-			custom/ft_printfd/ft_putstr_re_fd.c
+			custom/ft_printfd/ft_putstr_re_fd.c\
+			custom/str/ft_strtabdup_lst.c\
+			custom/str/ft_split_lst.c\
+			custom/str/ft_strdup_lst.c\
+			custom/str/ft_strjoin_lst.c\
+			custom/mem/ft_alist.c\
+			custom/str/ft_strmapi_lst.c\
+			custom/str/ft_substr_lst.c\
+			custom/str/ft_strtrim_lst.c\
+			custom/mem/nufree.c\
+			custom/t_list/ft_lst_rotate.c\
+			custom/t_list/ft_lst_str_print.c\
+			custom/t_list/ft_lst_swap.c\
 
 CC		= 	gcc
 CFLAGS	= 	-Wall -Werror -Wextra
@@ -66,31 +78,33 @@ OBJ		= 	${SRC:.c=.o}
 
 B_OBJ	= 	${B_SRC:.c=.o}
 
-C_OBJ	= 	${C_SRC:.c=.o} ${GNL:.c=.o}
+C_OBJ	= 	${C_SRC:.c=.o} ${GNL:.c=.o} ${FTPRINTF:.c=.o}
 
 RM		= 	rm -f
 
-GNL_PATH		=	./modules/get_next_line
-GNL				=	$(GNL_PATH)/get_next_line_bonus.c\
-					$(GNL_PATH)/get_next_line_utils_bonus.c
+GNL_PATH	=	./modules/get_next_line
+GNL			=	$(GNL_PATH)/get_next_line_bonus.c\
+				$(GNL_PATH)/get_next_line_utils_bonus.c
 
-FTPRINTF_PATH	=	./modules/ft_printf
-FTPRINTF		=	$(FTPRINTF_PATH)/libftprintf.a
+PRINTF_PATH	=	./modules/ft_printf
+FTPRINTF	=	$(PRINTF_PATH)/func/ft_printf.c\
+				$(PRINTF_PATH)/func/ft_putchar_re.c\
+				$(PRINTF_PATH)/func/ft_puthexa.c\
+				$(PRINTF_PATH)/func/ft_putmem.c\
+				$(PRINTF_PATH)/func/ft_putnbr_re.c\
+				$(PRINTF_PATH)/func/ft_putstr_re.c\
+				$(PRINTF_PATH)/func/ft_ltoa.c
 
 %.o: %.c
 	${CC} ${CFLAGS} -c $< -o $@
 
 
-$(NAME): $(OBJ) $(B_OBJ) $(C_OBJ) $(FTPRINTF)
-	ar rcs $(NAME) $(OBJ) $(B_OBJ) $(C_OBJ) $(FTPRINTF)
+$(NAME): $(OBJ) $(B_OBJ) $(C_OBJ)
+	ar rcs $(NAME) $(OBJ) $(B_OBJ) $(C_OBJ)
 
 all: $(NAME)
 
 bonus: $(NAME)
-
-$(FTPRINTF):
-	@$(MAKE) --no-print-directory -C $(FTPRINTF_PATH)
-	@$(MAKE) --no-print-directory clean -C $(FTPRINTF_PATH)
 
 clean:
 	$(RM) ${OBJ}
@@ -99,7 +113,6 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	@$(MAKE) --no-print-directory fclean -C $(FTPRINTF_PATH)
 
 re: fclean all
 

@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftplus_macro.h                                  :+:      :+:    :+:   */
+/*   ft_alist.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/19 03:18:26 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 09:41:19 by emaillet         ###   ########.fr       */
+/*   Created: 2025/01/20 11:04:14 by emaillet          #+#    #+#             */
+/*   Updated: 2025/01/20 15:00:58 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPLUS_MACRO_H
-# define LIBFTPLUS_MACRO_H
+#include "../../libft.h"
 
-# define RETURN_ERROR	-1
-# define RETURN_SUCCESS	1
+t_list	**ft_alist(void)
+{
+	static t_list	*alloc = NULL;
 
-#endif
+	if (alloc == NULL)
+		alloc = ft_calloc(1, sizeof(t_list));
+	return (&alloc);
+}
+
+void	ft_alist_free(void)
+{
+	t_list	**lst;
+
+	lst = ft_alist();
+	ft_lstclear(lst, nufree);
+}

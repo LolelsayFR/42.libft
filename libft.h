@@ -6,11 +6,13 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 05:59:19 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/20 16:28:51 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef LIBFT_H     
-# define LIBFT_H    
+
+#ifndef LIBFT_H
+# define LIBFT_H
+
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
@@ -73,9 +75,28 @@ size_t	ft_printf(const char *s, ...);
 size_t	ft_printfd(int fd, const char *s, ...);
 char	*get_next_line(int fd);
 char	*ft_ltoa(long n);
-int		ft_free_tab(void **tab);
+int		ft_free_strtab(char **tab);
 int		ft_isspace(int c);
 int		ft_islower(int c);
 int		ft_isupper(int c);
+
+char	**ft_strtabdup(char **tab);
+char	*ft_strjointab(char const **tab);
+char	**ft_strtabdup_lst(char **tab);
+char	*ft_strdup_lst(const char *s);
+char	*ft_substr_lst(char *s, unsigned int start, size_t len);
+char	*ft_strjoin_lst(char const *s1, char const *s2);
+char	*ft_strjointab_lst(char const **tab);
+char	*ft_strtrim_lst(char const *s1, char const *set);
+char	**ft_split_lst(char const *s, char c);
+char	*ft_ltoa_lst(long n);
+t_list	*ft_lst_rotate(t_list **lst, size_t n);
+t_list	*ft_lst_unrotate(t_list **lst, size_t n);
+void	ft_lst_swap(t_list **a, t_list **b);
+void	ft_lstprintfd(t_list *liste, int fd);
+t_list	**ft_alist(void);
+char	*ft_strmapi_lst(char const *s, char (*f)(unsigned int, char));
+void	nufree(void *ptr);
+void	ft_alist_free(void);
 
 #endif

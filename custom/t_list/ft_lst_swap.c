@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftplus_macro.h                                  :+:      :+:    :+:   */
+/*   ft_lst_swap.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/19 03:18:26 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 09:41:19 by emaillet         ###   ########.fr       */
+/*   Created: 2025/01/20 16:21:52 by emaillet          #+#    #+#             */
+/*   Updated: 2025/01/20 16:28:39 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPLUS_MACRO_H
-# define LIBFTPLUS_MACRO_H
+#include "../../libft.h"
 
-# define RETURN_ERROR	-1
-# define RETURN_SUCCESS	1
+void	ft_lst_swap(t_list **a, t_list **b)
+{
+	void	*tmp;
 
-#endif
+	if (!a || !b)
+		return ;
+	tmp = (*a)->content;
+	(*a)->content = (*b)->content;
+	(*b)->content = tmp;
+}

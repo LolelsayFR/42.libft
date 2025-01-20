@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 23:28:48 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/19 02:36:13 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/20 12:50:10 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	{
 		(*del)(lst->content);
 		free(lst);
+		lst = NULL;
 	}
 }
 

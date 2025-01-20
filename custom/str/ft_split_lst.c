@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_split_lst.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 12:54:31 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/01/20 13:18:19 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../../libft.h"
 
 static void	ft_freeall(char **result, size_t j)
 {
@@ -62,6 +62,7 @@ static char	**ft_splitinject(char const *s, char c, char **result)
 			result[j] = ft_substr(s, start, i - start);
 			if (!result[j])
 				return (ft_freeall(result, j), NULL);
+			ft_lstadd_back(ft_alist(), ft_lstnew(result[j]));
 			j++;
 		}
 	}
@@ -69,14 +70,16 @@ static char	**ft_splitinject(char const *s, char c, char **result)
 	return (result);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split_lst(char const *s, char c)
 {
 	char	**result;
 
 	result = (char **)ft_calloc((ft_countab(s, c) + 1), sizeof(char *));
 	if (!result)
 		return (NULL);
-	return (ft_splitinject(s, c, result));
+	result = ft_splitinject(s, c, result);
+	ft_lstadd_back(ft_alist(), ft_lstnew(result));
+	return (result);
 }
 
 //int	main(int argc, char *argv[])

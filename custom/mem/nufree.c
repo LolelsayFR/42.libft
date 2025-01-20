@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftplus_macro.h                                  :+:      :+:    :+:   */
+/*   nufree.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/19 03:18:26 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 09:41:19 by emaillet         ###   ########.fr       */
+/*   Created: 2025/01/20 12:51:33 by emaillet          #+#    #+#             */
+/*   Updated: 2025/01/20 12:52:12 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPLUS_MACRO_H
-# define LIBFTPLUS_MACRO_H
+#include "../../libft.h"
 
-# define RETURN_ERROR	-1
-# define RETURN_SUCCESS	1
-
-#endif
+void	nufree(void *ptr)
+{
+	free(ptr);
+	ptr = NULL;
+}
