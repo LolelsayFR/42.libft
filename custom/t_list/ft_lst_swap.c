@@ -16,7 +16,7 @@ void	ft_lst_swap(t_list **a, t_list **b)
 {
 	void	*tmp;
 
-	if (!a || !b)
+	if (!*a || !*b)
 		return ;
 	tmp = (*a)->content;
 	(*a)->content = (*b)->content;
