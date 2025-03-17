@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 03:37:46 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 08:42:50 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/03/16 03:37:04 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_free_strtab(char **tab)
 	int	i;
 
 	i = 0;
+	if (tab == NULL)
+		return (LFT_ERROR);
 	while (tab[i] != NULL)
 	{
 		free(tab[i]);

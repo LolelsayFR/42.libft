@@ -51,6 +51,7 @@ C_SRC	=	custom/conditional/ft_islower.c\
 			custom/conditional/ft_isspace.c\
 			custom/conversion/ft_ltoa.c\
 			custom/conversion/ft_atol.c\
+			custom/conversion/ft_lst_to_tab.c\
 			custom/mem/ft_free_strtab.c\
 			custom/ft_printfd/ft_printfd.c\
 			custom/ft_printfd/ft_putchar_re_fd.c\
@@ -66,10 +67,13 @@ C_SRC	=	custom/conditional/ft_islower.c\
 			custom/str/ft_strmapi_lst.c\
 			custom/str/ft_substr_lst.c\
 			custom/str/ft_strtrim_lst.c\
+			custom/str/ft_sort_str_tab.c\
 			custom/mem/nufree.c\
 			custom/t_list/ft_lst_rotate.c\
-			custom/t_list/ft_lst_str_print.c\
+			custom/print/ft_lst_str_print.c\
 			custom/t_list/ft_lst_swap.c\
+			custom/t_list/ft_lst_removeone.c\
+			custom/t_list/ft_logs.c\
 
 CC		= 	gcc
 CFLAGS	= 	-Wall -Werror -Wextra
