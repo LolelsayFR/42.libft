@@ -34,7 +34,8 @@ SRC		=	conversion/ft_atoi.c\
 			str/ft_strtrim.c\
 			str/ft_substr.c\
 			str/ft_tolower.c\
-			str/ft_toupper.c
+			str/ft_toupper.c\
+			str/ft_strcat.c
 
 B_SRC	=	t_list/ft_lstadd_back_bonus.c\
 			t_list/ft_lstadd_front_bonus.c\
@@ -79,7 +80,7 @@ C_SRC	=	custom/conditional/ft_islower.c\
 			custom/ft_dummies.c\
 
 CC		= 	gcc
-CFLAGS	= 	-Wall -Werror -Wextra
+CFLAGS	= 	-Wall -Werror -Wextra -g
 
 OBJ		= 	${SRC:.c=.o}
 
