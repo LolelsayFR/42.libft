@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2025/03/21 12:15:10 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/03/21 12:42:44 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,5 @@ char	*ft_ltoahex(long n);
 char	*ft_ltoahex_lst(long n);
 void	ft_alist_add_back(void *content);
 void	ft_alist_add_front(void *content);
-
+void	dumb(int x, ...);
 #endif
