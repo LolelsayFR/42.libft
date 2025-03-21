@@ -76,6 +76,7 @@ C_SRC	=	custom/conditional/ft_islower.c\
 			custom/t_list/ft_lst_swap.c\
 			custom/t_list/ft_lst_removeone.c\
 			custom/t_list/ft_logs.c\
+			custom/ft_dummies.c\
 
 CC		= 	gcc
 CFLAGS	= 	-Wall -Werror -Wextra
