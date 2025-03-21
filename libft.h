@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2025/03/16 01:56:23 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/03/21 11:22:12 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,8 @@ void	ft_logs_free(void);
 size_t	ft_logs_add(t_log_type id, char *msg);
 void	ft_printlogs(t_log_type id);
 void	ft_printlogs_fd(t_log_type id, int fd);
+t_rgb	itorgb(unsigned char r, unsigned char g, unsigned char b);
+char	*ft_ltoahex(long n);
+char	*ft_ltoahex_lst(long n);
 
 #endif

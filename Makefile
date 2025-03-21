@@ -52,6 +52,8 @@ C_SRC	=	custom/conditional/ft_islower.c\
 			custom/conversion/ft_ltoa.c\
 			custom/conversion/ft_atol.c\
 			custom/conversion/ft_lst_to_tab.c\
+			custom/conversion/ft_rgb.c\
+			custom/conversion/ft_ltoahex.c\
 			custom/mem/ft_free_strtab.c\
 			custom/ft_printfd/ft_printfd.c\
 			custom/ft_printfd/ft_putchar_re_fd.c\

@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/14 01:38:56 by emaillet          #+#    #+#             */
-/*   Updated: 2025/03/17 23:31:34 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/03/21 11:19:54 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,9 @@ int	main(int ac, char **av, char **env)
 	i = -1;
 	while (tab[++i] != NULL)
 		ft_logs_add(i % 3, tab[i]);
-	ft_printlogs(ALL_LOGS);
 	ft_free_strtab(tab);
 	ft_lstclear(&test, free);
+	ft_putendl_fd(ft_ltohex_lst(2598783240985), 1);
 	ft_logs_free();
+	ft_alist_free();
 }

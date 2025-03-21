@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 03:18:26 by emaillet          #+#    #+#             */
-/*   Updated: 2025/03/15 23:09:41 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/03/21 11:02:36 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,13 @@ typedef struct s_logs
 	t_log_type		log_type;
 	char			*log;
 }	t_logs;
+
+typedef struct s_rgb
+{
+	unsigned char	r;
+	unsigned char	g;
+	unsigned char	b;
+}	t_rgb;
 
 # define ALL_LOGS		-1
 # define ERROR_LOGS		2
