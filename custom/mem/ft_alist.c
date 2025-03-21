@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 11:04:14 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 15:00:58 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/03/21 12:14:41 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,14 @@ void	ft_alist_free(void)
 
 	lst = ft_alist();
 	ft_lstclear(lst, nufree);
+}
+
+void	ft_alist_add_back(void *content)
+{
+	ft_lstadd_back(ft_alist(), ft_lstnew(content));
+}
+
+void	ft_alist_add_front(void *content)
+{
+	ft_lstadd_front(ft_alist(), ft_lstnew(content));
 }
