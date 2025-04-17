@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: emaillet <emaillet@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:47:36 by emaillet          #+#    #+#             */
-/*   Updated: 2025/03/21 18:14:08 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/04/17 16:08:03 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,7 @@ char	*ft_ltoahex_lst(long n);
 void	ft_alist_add_back(void *content);
 void	ft_alist_add_front(void *content);
 void	dumb(int x, ...);
+char	*ft_strdupnull(const char *s);
+char	*ft_strdupnull_lst(const char *s);
 
 #endif

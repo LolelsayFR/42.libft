@@ -6,7 +6,7 @@
 /*   By: emaillet <emaillet@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2025/04/17 16:00:03 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/04/17 16:09:07 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,27 @@ char	*ft_strdup_lst(const char *s)
 	int		i;
 	char	*dest;
 
-	if (s == NULL);
+	dest = ft_calloc((ft_strlen(s) + 1), sizeof(char));
+	if (dest == NULL)
+		return (NULL);
+	dest[0] = '\0';
+	i = 0;
+	while (s[i])
+	{
+		dest[i] = s[i];
+		i++;
+	}
+	dest[i] = '\0';
+	ft_lstadd_back(ft_alist(), ft_lstnew(dest));
+	return (dest);
+}
+
+char	*ft_strdupnull_lst(const char *s)
+{
+	int		i;
+	char	*dest;
+
+	if (s == NULL)
 		return (NULL);
 	dest = ft_calloc((ft_strlen(s) + 1), sizeof(char));
 	if (dest == NULL)
