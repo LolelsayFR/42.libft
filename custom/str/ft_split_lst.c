@@ -74,6 +74,8 @@ char	**ft_split_lst(char const *s, char c)
 {
 	char	**result;
 
+	if (!s)
+		return (NULL);
 	result = (char **)ft_calloc((ft_countab(s, c) + 1), sizeof(char *));
 	if (!result)
 		return (NULL);
