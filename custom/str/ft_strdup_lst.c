@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup_lst.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emaillet <emaillet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: emaillet <emaillet@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:52:01 by emaillet          #+#    #+#             */
-/*   Updated: 2025/01/20 13:19:32 by emaillet         ###   ########.fr       */
+/*   Updated: 2025/04/17 16:00:03 by emaillet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strdup_lst(const char *s)
 	int		i;
 	char	*dest;
 
+	if (s == NULL);
+		return (NULL);
 	dest = ft_calloc((ft_strlen(s) + 1), sizeof(char));
 	if (dest == NULL)
 		return (NULL);
